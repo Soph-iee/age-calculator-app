@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <form class="main-container" action="#">
+      <div class="input-section">
+        <div class="input day">
+          <label for="day">Day</label>
+          <input
+            type="number"
+            id="day"
+            name="day"
+            placeholder="DD"
+            min="01"
+            max="31"
+          />
+          <p class="error-message display"></p>
+        </div>
+        <div class="input month">
+          <label for="month">Month</label>
+          <input
+            type="number"
+            id="month"
+            name="month"
+            placeholder="MM"
+            min="01"
+            max="12"
+          />
+          <p class="error-message display"></p>
+        </div>
+        <div class="input year">
+          <label for="year">Year</label>
+          <input
+            type="number"
+            id="year"
+            name="year"
+            placeholder="YYYY"
+            min="1023"
+            max="2023"
+          />
+          <p class="error-message display"></p>
+        </div>
+      </div>
+      <div class="submit-btn">
+        <img class="icon-arrow" src="assets/images/icon-arrow.svg" />
+      </div>
+      <div class="result-section">
+        <h1><span class="calculated-years"> --</span> years</h1>
+        <h1><span class="calculated-months"> -- </span> months</h1>
+        <h1><span class="calculated-days">--</span>days</h1>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
